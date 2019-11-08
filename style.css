@@ -1,0 +1,321 @@
+* {
+	margin: 0 auto;
+	font-family: 'Roboto';
+	/*défini la police général */
+	box-sizing: border-box;
+	/* permet d'inclure le padding et les bordures dans le calcul des dimensions de tous les éléments*/
+}
+
+p {
+	line-height: 160%;
+	/* défini l'interligne des paragraphes de 60% de plus que de base (donc 160%) */
+}
+
+a {
+	text-decoration: none;
+	/* enlève les surlignement automatique des liens*/
+	color: #f3782d;
+	/* met la couleure orange des liens cliquables*/
+}
+
+a:hover {
+	text-decoration: underline;
+	/* lorsque l'utilisateur passe la souris sur un lien, celui-ci se voit attribuer un soulignement*/
+}
+
+@font-face {
+	font-family: 'Roboto';
+	/* on définit la police Roboto */
+	src: url("font/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	/* on définit la police Roboto en gras */
+	src: url("font/Roboto-Bold.ttf");
+}
+
+body {
+	background: linear-gradient(to bottom, #95989d 0%, #e4e0e1 20%) no-repeat;
+}
+
+#bandeau {
+	width: 100%;
+	border-bottom: solid 3.5px #f3782d;
+	vertical-align: middle;
+	/* enlève l'espace indésirable sous l'image */
+}
+
+.page {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .27);
+	max-width: 1000px;
+	/* défini la largeur max du corps de la page à 1000px pour que le site soit lisibile même sur petit écran*/
+	display: block;
+	height: 100%;
+}
+
+footer {
+	background-color: #404040;
+	color: white;
+	border-top: solid 3.5px #f3782d;
+}
+
+.footer-contenu {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.logo {
+	width: 8%;
+	margin-top: 1%;
+}
+
+.bienvenue {
+	text-align: center;
+	padding: 6.5px;
+	background-color: #404040;
+	color: white;
+	font-size: 12px;
+}
+
+.bienvenue span {
+	font-weight: bold;
+}
+
+.vignette1, .vignette2 {
+	border: solid 5px #252525;
+	color: white;
+	float: left;
+	background-color: #252525;
+	height: 50%;
+	width: 30%;
+	margin-left: 13%;
+	text-align: center;
+	transform: scale(1);
+	/*taille de départ*/
+	transition: .3s ease-in-out;
+	/* animation de zoom se fera sur 0.3 secondes de façon ease-in-out*/
+}
+
+.vignette1:hover, .vignette2:hover {
+	filter: brightness(1.2);
+	/* augmente la luminosité au survol*/
+	transform: scale(1.1);
+	/*augmente la taille au survol*/
+}
+
+.vignette1 img, .vignette2 img {
+	width: 100%;
+	height: auto;
+}
+
+.societe-rpg, .danger-comportement, .tableau {
+	/*ces div contiendront une image ainsi qu'un texte, ex : article et auteur, ces class permettent de les positionner */
+	display: inline-block;
+	height: auto;
+	min-width: 100%;
+	margin-top: 80px;
+}
+
+table {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	color: #404040;
+}
+
+td, tr {
+	border-bottom: 0.1px solid #404040;
+	padding: 0 20px 7px 2px;
+	color: #404040;
+}
+
+td a {
+	color: #404040;
+}
+
+td a:hover {
+	color: #f3782d;
+	text-decoration: none;
+}
+
+.heure {
+	color: #f3782d;
+}
+
+.ariane {
+	font-size: 13.5px;
+	margin: 20px 0 20px 20px;
+}
+
+.ariane a:hover {
+	text-decoration: underline;
+}
+
+.ariane p {
+	color: #404040;
+}
+
+.titre-article {
+	margin-bottom: 20px;
+	font-family: 'Roboto';
+	color: #3a394a;
+	font-size: 33px;
+}
+
+.date-publication {
+	color: #8e8e8f;
+	font-size: 12px;
+}
+
+.illustration {
+	width: 100%;
+	margin-top: 2%;
+	border: solid 3px #3a3939;
+}
+
+.content {
+	display: flex;
+}
+
+.gauche {
+	width: 75%;
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 2%;
+}
+
+.article {
+	padding-left: 20px;
+}
+
+.h-article {
+	font-family: 'Roboto-Bold';
+	font-size: 20px;
+	color: #3a3939;
+	margin-bottom: 15px;
+}
+
+.p-article {
+	font-size: 15px;
+	color: #3a3939;
+	margin-bottom: 30px;
+}
+
+.img-article {
+	width: 100%;
+	border: solid 3px #3a3939;
+}
+
+.container-image {
+	font-size: 12px;
+	text-align: center;
+	color: #263d5c;
+	margin-bottom: 20px;
+}
+
+.desc-image p {
+	font-family: 'Roboto-Light';
+}
+
+iframe {
+	width: 100%;
+}
+
+.video {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.auteur {
+	display: flex;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.auteur img {
+	width: 3.75rem;
+	height: 3.75rem;
+	border-radius: 1.875rem;
+	margin: 0;
+	margin-right: 20px;
+}
+
+.auteur span {
+	margin-left: 0;
+}
+
+.droite {
+	/* div de droite qui contiendra le slider d'image et l'ancre */
+	width: 36%;
+	position: relative;
+	margin-top: 16%;
+	text-decoration: none;
+	margin-right: 1%;
+}
+
+.droite p {
+	background-color: #f3782d;
+	color: white;
+	font-size: 22px;
+	padding-left: 7px;
+}
+
+.ancre {
+	/* classe pour l'ancre permettant de remonter en haut de la page*/
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 37px;
+}
+
+.slider {
+	animation: slide 11s infinite;
+	/* l'image de fond va changer pour présenter les autres articles à lire */
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: solid #585858 10px;
+}
+
+.slider img {
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+}
+
+.slider p {
+	text-align: center;
+	color: white;
+}
+
+@keyframes slide {
+	/*ordre des images en fonction du pourcentage de l'animation dans le temps*/
+	0% {
+		background-image: url("image/rpg_tactique_slide.png");
+	}
+	25% {
+		background-image: url("image/jeu_societe_slide.png");
+	}
+	50% {
+		background-image: url("image/danger_IA_slide.png");
+	}
+	75% {
+		background-image: url("image/ia_comportement_slide.png");
+	}
+	100% {
+		background-image: url("image/rpg_tactique_slide.png");
+	}
+}
+
+.presentation {
+	/*cette classe sera utilisé pour la page de contact et de chacun des auteurs */
+	margin: 40px;
+	display: inline-flex;
+}
+
+.presentation span {
+	margin: 0 20px;
+}

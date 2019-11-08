@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Le comportement de l'intelligence artificielle dans les jeux vidéos<</title>
+	<meta name="description"
+		content="Article traitant du comportement de l'intelligence artificielle dans les jeux vidéos. On parle du pathfinding et autres comportement dans les jeux de combat par exemple" />
+	<meta name="keywords" content="Intelligence artificielle Algorithme Comportement Jeux vidéos Article"/>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="image/logo.png">
+</head>
+
+<body>
+
+	<div class="page">
+		<a href="index.html"><img id="bandeau" src="image/bandeau.png" alt="bandeau"></a>
+
+		<nav class="ariane">
+			<p>
+				<a href="index.html">Accueil</a>
+				<span href="">> Le comportement de l'intelligence artificielle dans les jeux vidéos</span>
+			</p>
+		</nav>
+		<div class="article">
+			<div class="content">
+				<div class="gauche">
+					<p class="titre-article">Le comportement de l'intelligence artificielle dans les jeux vidéos</p>
+
+					<p class="date-publication">Publié le 28 Octobre 2019 à 19h20</p>
+					<img class="illustration" src="image/IA comportment.jpg" alt="une intelligence artificielle avec son algorithme">
+					<p class="container-image">Illustration tirée du blog <a href="https://www.archimag.com/vie-numerique/2018/02/19/intelligence-artificielle-articles-wikipedia-ecrits-google">archimag</a></p>
+					<p class="p-article">Pour qu'une IA soit réussite dans un jeu vidéo, elle doit bien s'incruster
+						dans le monde, sa
+						façon de se comporter doit coller avec le monde qui l'entoure. Si elle fait n'importe quoi,
+						l'experience du joueur peut être dégradé. C'est la conséquence d'un "bug".
+					</p>
+
+					<p class="h-article">LES BUGS</p>
+					<p class="p-article">C'est une anomalie dans un fonctionnement informatique. Celui-ci peut
+						être dû à une contradiction logique dans la programmation de l'intelligence.
+					</p>
+					<div class="container-image">
+						<img class="img-article" src="image/bug_ia.jpg" alt="PNJ en plein bug">
+						<p>Personnage non joueur, dans le jeu <a href="https://finalfantasyxv.square-enix-games.com/fr"
+								target="_blank">Final Fantasy XV</a>, en plein bug, assis sur le vide</p>
+					</div>
+					<p class="p-article">C'est pour ça qu'il faut qu'une intelligence artificielle bien codé.
+						L'algorithme doit être bien
+						pensé.
+						Nous allons passer en revu les differentes technique utilisé pour
+						maitriser l'ia dans les jeux-vidéo.
+					</p>
+
+					<p class="p-article">On peut reconnaitre differente type d'IA dans les jeux vidéos. Il y a
+						les IA amicales, celles qui coopère avec le joueur pour l'aider à gagner et d'autre IA qui sont
+						les ennemies du joueurs, les
+						agents.
+						Ces
+						agents s'adapte en fonction des choix du joueur, et peu communiquer avec d'autres
+						agents. </p>
+
+					<p class="h-article">LA RECHERCHE DE CHEMIN</p>
+
+					<p class="p-article">En anglais, le pathfinding, c'est la recherche du meilleur chemin en
+						partant d'un point A à un
+						point B, tout en respectant certaines contraites.</p>
+					<p class="p-article">Pour le pathfinding, on utilise généralement l’algorithme A*. Une version
+						améliorée, plus rapide, de l’algorithme de Dijkstra. Celui-ci ayant pour but, dans un plan 2D
+						d’un jeu vidéo par exemple, de parcourir dans l’ordre (en fonction de la distance qui sépare le
+						point de départ et le point d’arrivé) toutes les cases possibles, jusqu’à trouver la case
+						d’arrivée.
+					</p>
+
+					<div class="container-image">
+						<img class="img-article" src="image/Dijkstra.png" alt="Chemin trouvé par l'algorithme Dijkstra">
+						<p>Chemin trouvé par l'algorithme Dijkstra. Image tirée du site <a href="https://www.semanticscholar.org/paper/Pathfinding-Optimization-when-Solving-the-Paparazzi-Baldi-Maric/95ee00f2879951b82d1c56c9821019c9cbf8dc1c/figure/2" target="_blank">Semantic scholar</a></p>
+					</div>
+
+					<p class="h-article">LES COMBATS</p>
+					<div class="video">
+						<iframe width="910" height="512" src="https://www.youtube.com/embed/kxwPr9oxUMw" frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<p class="p-article">
+						Dans cette vidéo, nous pouvons voir 2 robots se battre en duel sur le jeu <a
+							href="https://www.smashbros.com/fr_FR/" target="_blank">Super Smash Bros</a>. Les
+						deux robots réalisent les mêmes coups au même moment car leur algorithme est le même. On peut en
+						conclure qu'une intelligence artificielle se doit d'avoir un algorithme qui envisage toutes les
+						possibilités, même celles où l'adversaire a les mêmes mouvements que lui-même. </p>
+					<div class="auteur">
+						<img src="image/Mehdi.png" alt="Photo de profil de l'auteur Mehdi Zenasni">
+						<span>Par <a href="mehdi.html">Mehdi Zenasni</a>, étudiant en informatique</span>
+					</div>
+				</div>
+				<div class="droite">
+					<div>
+						<!-- sans cette div le slide part en vrille-->
+						<p>A lire aussi</p>
+						<a href="index.html">
+							<div class="slider">
+								<img src="image/rpg_tactique.png" alt="Autres articles à voir" />
+							</div>
+						</a>
+					</div>
+					<a class="ancre" href="#bandeau">Retourner en haut</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+<footer>
+	<div class="footer-contenu">
+		<div>
+			<p>Site réalisé à l'issue d'un projet tuteuré en iut informatique à Paul Sabatier</p><a
+				href="contact.html">Nous
+				contacter</a> - <a href="auteurs.html">Auteurs </a>
+		</div>
+		<img class="logo" src="image/logoIUT.png" alt="IUT Toulouse">
+	</div>
+</footer>
+
+</html>
